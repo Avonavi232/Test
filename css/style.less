@@ -96,6 +96,9 @@ body{
 		margin: 0 auto; 
 	}
 }
+.wrapper{
+	max-width: 1170px;
+}
 
 /*********ОБЩИЕ СТИЛИ***********/
 
@@ -112,6 +115,7 @@ body{
 .header{
 	position: relative; 
 	&__flex{
+		position: relative;
 		display: -webkit-flex;
 		display: -moz-flex;
 		display: -ms-flex;
@@ -136,12 +140,11 @@ body{
 	}
 	&__nav{
 		flex:1 1 1000px;   
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: flex-end; 
+		text-align: right;
+		padding: 0;
+		margin: 0 !important;
+		border: none;
+		box-shadow: none;
 		ul>li{
 			display: inline-block; 
 		}
@@ -161,6 +164,11 @@ body{
 	&__toggle{
 		display: none; 
 	}
+}
+
+.navbar-toggle{
+	color: white;
+	font-size: 2rem;
 }
 
 .slider{   
