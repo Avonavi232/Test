@@ -1,0 +1,161 @@
+@media screen and (max-width: 1200px){
+//	.slider__title{
+//		color: green;   
+//	}
+	
+	
+	
+}
+
+
+@media screen and (max-width: 992px){
+//	.slider__title{
+//		color: red;  
+//	}
+	
+	
+	
+}
+
+
+@media screen and (max-width: 768px){
+//	.slider__title{
+//		color: orange;  
+//	}
+	
+	
+	
+	.decorUser:after, .decorUser:before{
+		width: 20rem;        
+	}
+	/***HEADER***/
+	.header .container{
+		padding-top: 2rem;   
+	}
+	.header{
+		transition: all .2s;  
+	}
+	.header__nav{ 
+		opacity: 0; 
+		display: block;   
+		transform: translateY(30rem);  
+		position: absolute; 
+		z-index: -10;  
+		left: 0;
+		top: 100%; 
+		width: 100%;
+		transition: all .2s ease-out;     
+		ul>li{ 
+			display: block; 
+		}
+		&__item{
+			padding: 2rem; 
+			text-align: center; 
+			display: block; 
+		}
+	}
+	.header__nav.header__nav_active{   
+		z-index: 1;
+		opacity: 1;
+		transform: translateY(0); 
+	}
+	.header_mask{
+		background-color: rgba(0,0,0, .4); 
+	} 
+	.header__flex{
+		align-items: center;  
+	}
+	.header__toggle{
+		display: block;
+		font-size: 3rem;  
+		color: white; 
+		cursor: pointer; 
+	}
+	.header__toggle:hover{
+		transform: scale(1.2); 
+		transition: all 0.1s;  
+	}
+	/***HEADER end***/
+	
+	/***MAIN***/
+	.slider__next{
+		display: none !important;   
+	}
+	.slider__item{
+		padding-top: 15rem;   
+	}
+	/***MAIN end***/
+	
+	/***BENEFITS***/
+	.benefits__flex{
+		flex-wrap: wrap; 
+	}
+	.benefits__item{
+		flex-basis: 100%;
+		&__text{
+			padding-bottom: 4rem;  
+			max-width: 450px;  
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+	/***BENEFITS end***/
+	
+	/***EXPERIENCE***/
+	#experience{
+		.container{
+			flex-wrap: wrap;
+		}
+		.container>div{
+			width: 100%; 
+		}
+		.experience__left{
+			margin-bottom: 3rem; 
+		}
+	}
+	/***EXPERIENCE end***/
+	
+	/***PORTFOLIO***/
+	.portfolio__gallery{
+		&__item{
+			width: 50%;   
+		}
+	}
+	.portfolio__numbers{
+		&__item{
+			width: 50%; 
+		}
+	}
+	/***PORTFOLIO end***/
+}
+
+
+@media screen and (max-width: 490px){ 
+//	.slider__title{
+//		color: aqua;   
+//	}
+	
+	
+	
+	.decorUser:after, .decorUser:before{
+		width: 12rem;          
+	}
+	/***PORTFOLIO***/
+	.portfolio__gallery{
+		text-align: center;  
+		&__item{
+			width: 95%;
+		}
+	}
+	/***PORTFOLIO end***/
+	  
+	/***EXPERIENCE***/
+	#experience__tabs{
+	/****переопределение jquery ui***/
+		.ui-widget-header{ 
+			flex-wrap: wrap;  
+		}
+	/****переопределение jquery ui***/
+	}
+	/***EXPERIENCE end***/
+}
