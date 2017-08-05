@@ -19,7 +19,7 @@ body{
 	//border: 2px solid #4cff34;     
 }
 .row{
-	.red; 
+//	.red; 
 }
 
 .white{
@@ -110,6 +110,7 @@ body{
 #main{
 	background: url(../img/main-bg.jpg) no-repeat center top;  
 	background-size: cover;  
+	padding-bottom: 8rem;
 }
 
 .header{
@@ -161,8 +162,10 @@ body{
 			background-color: @accent2; 
 		}
 	}
-	&__toggle{
-		display: none; 
+	&__toggle.navbar-toggle{
+		font-size: 3rem;  
+		color: white; 
+		cursor: pointer; 
 	}
 }
 
@@ -196,14 +199,12 @@ body{
 		color: @accent; 
 	}
 	&__next{
+		display: inline-block;
+		margin-top: 25rem;
 		font-size: 5rem;
-		position: absolute;
 		color: white;
-		z-index: 1; 
 		background-color: rgba(249, 173, 24, 0.15);
 		padding: 2.1rem 1.4rem; 
-		top: 40%; 
-		right: 0; 
 		cursor: pointer;
 	}
 	&__next:hover{
@@ -216,13 +217,20 @@ body{
 	height: 50px; 
 	margin: 0 auto; 
 	cursor: pointer; 
-	font-size: 6rem;  
+	font-size: 6rem; 
+	display: inline-block;
 	color: @regular; 
 	text-align: center; 
 }
 .subslider_toggle:hover{
-	font-size: 6.5rem;  
+	transform: scale(1.1);
 	transition: all 0.1s;  
+}
+.slider__container{
+		padding-top: 27rem;
+}
+.carousel-inner > .item{
+  min-height: 300px;
 }
 
 /*************MAIN**************/

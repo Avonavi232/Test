@@ -14,11 +14,13 @@
 //	}
 	
 	
-	
+	.decorUser:after, .decorUser:before{
+		width: 30rem;        
+	}
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 //	.slider__title{
 //		color: orange;  
 //	}
@@ -61,12 +63,6 @@
 	} 
 	.header__flex{
 		align-items: center;  
-	}
-	.header__toggle{
-		display: block;
-		font-size: 3rem;  
-		color: white; 
-		cursor: pointer; 
 	}
 	.header__toggle:hover{
 		transform: scale(1.2); 
@@ -130,7 +126,7 @@
 }
 
 
-@media screen and (max-width: 490px){ 
+@media screen and (max-width: 480px){ 
 //	.slider__title{
 //		color: aqua;   
 //	}
@@ -138,24 +134,24 @@
 	
 	
 	.decorUser:after, .decorUser:before{
-		width: 12rem;          
+		width: 10rem;          
 	}
-	/***PORTFOLIO***/
-	.portfolio__gallery{
-		text-align: center;  
-		&__item{
-			width: 95%;
-		}
-	}
-	/***PORTFOLIO end***/
-	  
-	/***EXPERIENCE***/
-	#experience__tabs{
+//	/***PORTFOLIO***/
+//	.portfolio__gallery{
+//		text-align: center;  
+//		&__item{
+//			width: 95%;
+//		}
+//	}
+//	/***PORTFOLIO end***/
+//	  
+//	/***EXPERIENCE***/
+//	#experience__tabs{
+//	/****переопределение jquery ui***/
+//		.ui-widget-header{ 
+//			flex-wrap: wrap;  
+//		}
 	/****переопределение jquery ui***/
-		.ui-widget-header{ 
-			flex-wrap: wrap;  
-		}
-	/****переопределение jquery ui***/
-	}
+	//}
 	/***EXPERIENCE end***/
 }
