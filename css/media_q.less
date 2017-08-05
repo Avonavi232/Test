@@ -17,6 +17,11 @@
 	.decorUser:after, .decorUser:before{
 		width: 30rem;        
 	}
+	
+	.experience__title{  //нужно
+		color: #252525; 
+		padding-top: 4rem; 
+	}
 }
 
 
@@ -25,19 +30,11 @@
 //		color: orange;  
 //	}
 	
-	
-	
-	.decorUser:after, .decorUser:before{
+	.decorUser:after, .decorUser:before{  /*нужно*/
 		width: 20rem;        
 	}
 	/***HEADER***/
-	.header .container{
-		padding-top: 2rem;   
-	}
-	.header{
-		transition: all .2s;  
-	}
-	.header__nav{  
+	.header__nav{  		
 		position: absolute; 
 		z-index: 1;  
 		left: 0;
@@ -52,34 +49,29 @@
 			text-align: center; 
 			display: block; 
 		}
-	}
+	}  /*нужно*/
 	.header__nav.header__nav_active{   
 		z-index: 1;
 		opacity: 1;
 		transform: translateY(0); 
-	}
+	}  /*нужно*/
 	.header_mask{
-		background-color: rgba(0,0,0, .95); 
-	} 
-	.header__flex{
-		align-items: center;  
-	}
+		background-color: rgba(0,0,0, .85); 
+	}  /*нужно*/
+
 	.header__toggle:hover{
 		transform: scale(1.2); 
 		transition: all 0.1s;  
-	}
+	} /*нужно*/
 	.header__logo{
 		padding-bottom: 0.55rem;
-	}
+	} /*нужно*/
 	/***HEADER end***/
 	
 	/***MAIN***/
 	.slider__next{
 		display: none !important;   
-	}
-	.slider__item{
-		padding-top: 15rem;   
-	}
+	}	/*нужно*/
 	/***MAIN end***/
 	
 	/***BENEFITS***/
