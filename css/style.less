@@ -175,22 +175,7 @@ body{
 	}
 }
 
-.navbar-toggle{
-	color: white;
-	font-size: 2rem;
-}
-
 .slider{   
-	position: relative;
-	padding-bottom: 5rem; 
-	&__item{ 
-		padding: 28rem 0 0;   
- 		text-align: center; 
-		&__container{
-			max-width: 640px; 
-			margin: 0 auto; 
-		}  
-	}
 	&__title{
 		.regular;
 		font-size: 5rem; 
@@ -285,10 +270,7 @@ body{
 
 .benefits{
 	&__item{
-		//width: 33.333%;   
-		padding: 0 4rem; 
-		
-		flex: 1 0 200px;   
+		padding: 0 4rem;   
 		&__img{
 			width: 12rem;
 			height: 12rem;
@@ -572,15 +554,13 @@ body{
 }
 
 .portfolio__gallery{
-	.container{
-		font-size: 0; 
+	.col-md-4, .col-sm-6{
+		padding: 0.5rem;
 	}
 	&__item{
 		position: relative;
-		display: inline-block;
-		width: 33.33333%; 
-		padding: 0.5rem;
 		overflow: hidden; 
+		display: inline-block;
 		img{
 			transition: all 0.2s linear;
 		}
@@ -630,14 +610,10 @@ body{
 }
 .portfolio__numbers{
 	padding: 10rem 0; 
-	.container{
-		font-size: 0;
-	}
 	&__item{ 
 		display: inline-block;
 		text-align: center;
-		vertical-align: top;  
-		width: 25%;
+		vertical-align: top;
 		.item{
 			&__title{
 				color: @accent2;
@@ -735,24 +711,3 @@ body{
 }
 
 /************FOOTER*************/
-
-
-/*******************************/
-/*********ОБЩИЕ СТИЛИ***********/
-/*******************************/
-
-/*********ОБЩИЕ СТИЛИ***********/
-
-
-/*******************************/
-/*********ОБЩИЕ СТИЛИ***********/
-/*******************************/
-
-/*********ОБЩИЕ СТИЛИ***********/
-
-
-/*******************************/
-/*********ОБЩИЕ СТИЛИ***********/
-/*******************************/
-
-/*********ОБЩИЕ СТИЛИ***********/
