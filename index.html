@@ -26,93 +26,18 @@
 		<!-- YANDEX MAPS -->
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
     </script>
-    <script type="text/javascript">
-			var map;
-
-			ymaps.ready(function(){
-				map = new ymaps.Map("map", {
-					center: [55.76, 37.64],
-					zoom: 10,
-					setType: 'yandex#map',
-					controls: ["zoomControl", "fullscreenControl"]
-				});  
-				
-				map.behaviors.disable('scrollZoom');
-			});
-		</script>
-
 		<!-- YANDEX MAPS end-->
 		
+		
+		<script src="js/init.js"></script>
 		<script>
 			$(document).ready(function(){
-				var subslider_toggle = $(".subslider_toggle");
-				var slider__subslider = $('.slider__subslider');
-				var subslider = $('#subslider');
-				
-				$('.slick_slider').slick({
-					prevArrow: 'none',
-					nextArrow: '<p class="slider__next"><i class="fa fa-angle-right" aria-hidden="true"></i></p>' 
-				});//slick end
-				
-				$('.benefits__quotes__slider').slick({
-					prevArrow: 'none',
-					nextArrow: 'none',
-					dots: true
-				});//slick end
-				
-				$('.slick_slider').on('swipe', subslider_handler); 
-				$('.slider__next').click(subslider_handler);
-				function subslider_handler(){
-					var text;
-					text = $('.slick-active .slider__subslider').html();
-					subslider.html(text); 
-				};
-				
-				/*subslider_toggle*/
-				subslider_toggle.on('click', function(){
-					subslider.slideToggle(); 
-					var text;
-					text = $('.slick-active .slider__subslider').html();
-					subslider.html(text);   
-				});//onclick end
-				/*subslider_toggle*/
-							
-				/***Portfolio__sort***/
-				var items = $('.portfolio__sort__item');
-				items.hover(function(){
-					if ( !($(this).hasClass('item_state_active')) ) {
-						$(this).toggleClass('item_state_hover'); 
-					} 
-				}); 
-				items.click(function(){
-					items.removeClass('item_state_active').removeClass('item_state_hover');
-					$(this).addClass('item_state_active');  
-				});
-				/***Portfolio__sort***/
-				
-				/***Mobile Menu Toggler***/
-				var nav_toggle = $('.header__toggle');
-				var header_nav = $('.header__nav');
-				var header = $('.header')
-				nav_toggle.click(function(){
-					header_nav.toggleClass('header_mask');  
-				});
-				/***Mobile Menu Toggler end***/
-				
-				/***Experience Bars***/
-				var exp_bar = $('.skill__bar');
-				
-				//skill__amount
-				exp_bar.each(function(){
-					var exp_bar_fill = $(this).children();
-					var fill_length = 0;
-					fill_length = $(this).siblings('.skill__amount').text();  
-					
-						exp_bar_fill.css({
-							width: fill_length 
-						});
-				});
-				/***Experience Bars end***/
+				mapInit();
+				slickInit();
+				subsliderInit();
+				portfolioSortInit();
+				mobileMenuInit();
+				experienceBarsInit();
 			});//ready end
 		</script>
 		<!-- SCRIPTS ends--> 
